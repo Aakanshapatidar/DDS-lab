@@ -1,0 +1,67 @@
+Stack :	It is collection of elements arranged one above the other
+	A stack is commonly represnted in a vertical form
+	The arrangement of values in a stack will be from bottom to top
+Stack Rule is LIFO Last In First Out   OR   also called as FILO First In Last Out
+	The last element which is inserted into the stack will be
+	first element to be removed.
+
+-To manage the stack: 
+--->we use an int variable called "top" whose initial value is -1
+    It is used to identify the index position of the top most element
+--->we use an int variable called "limit" to identify the last index of the stack.
+
+-push()  : The process of adding elements into the stack is called push() operation.
+-pop()   : The process of deleting elements from the stack is called pop() operation.
+-display():The process of showing all available value of stack is called display().
+
+In push operation:
+-When we add an element, we increment top by 1
+-When we increment top, there is a possibility of a situation called "Overflow"
+-Overflow is when there is no space to add an element into the stack (stack is FULL)
+
+In pop operation:
+-When we delete an element, we decrement top by 1
+-When we decrement top, there is a possibility of a situation called "Underflow"
+-Underflow is when there is no element in the stack (stack is EMPTY)
+
+In display operation:
+-When the stack is NOT underflow then we run a loop to show the values 
+  from stack[0] to stack[top]
+
+Algorithm to perform a push operation on a stack:
+Step 1:	Increment the variable top by 1
+Step 2:	Check for overflow [condition is top>limit]
+Step 3:	If YES, then show a message "Stack Overflow", 
+	decrement top by 1 and also go to step 5
+Step 4:	If NO, accept the user input into stack[top]
+Step 5:	STOP
+
+Algorithm to perform a pop operation on a stack:
+Step 1:	Check for underflow [condition is top==-1 or top<0]
+Step 2:	If YES, then show a message "Stack Underflow", go to step 5
+Step 3:	If NO, display the value present in stack[top]
+Step 4: decrement top by 1
+Step 5:	STOP
+
+Algorithm to perform a display operation on a stack:
+Step 1:	Check for underflow [condition is top==-1 or top<0]
+Step 2:	If YES, then show a message "Stack Underflow", go to step 4
+Step 3:	If NO, display the values from stack[0] to stack[top]
+Step 4: STOP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FIFO : First In Frst Out
+	The very first element which is inserted into the stack will be
+	first element to be removed
